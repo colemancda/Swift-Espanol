@@ -137,7 +137,7 @@ let nombreCompleto: String = "John Appleseed"
 let saludoInformal = "Hola \(apodo ?? nombreCompleto)"
 ```
 
-Interruptores (*switch*) soportan cualquier tipo de datos y una amplia variedad de operaciones de comparacion: no estan limitados a numeros enteros y preubas de igualdad.
+[Interruptores](https://es.wikipedia.org/wiki/Switch_case) (*switch*) soportan cualquier tipo de datos y una amplia variedad de operaciones de comparacion: no estan limitados a numeros enteros y preubas de igualdad.
 
 ```
 let vegetal = "aji rojo"
@@ -163,5 +163,98 @@ Despues de ejecutar el codigo dentro del caso que emparejo, el programa sale (*e
 Puedes usar ```for```-```in``` para iterar sobre elementos en un diccionario proveyendo una pareja de nombres que se usara para cada pareja de llave-valor (*key-value*). Dictionarios son una collecion sin orden, entonces sus llaves y valores son iteradas en una orden arbitriaria.
 
 ```
+let numerosInteresantes = [
+    "Primo": [2, 3, 5, 7, 11, 13],
+    "Fibonacci": [1, 1, 2, 3, 5, 8],
+    "Cuadrado": [1, 4, 9, 16, 25],
+]
+var masGrande = 0
+for (tipo, numeros) in numerosInteresantes {
+    for numero in numeros {
+        if numero > masGrande {
+            masGrande = numero
+        }
+    }
+}
+print(masGrande)”
 ```
+
+#### Experimento
+Anade otra variable para registar que tipo de numero era el mas grande, asi tambien como que era ese numero grande.
+
+Usa ```while``` para repetir un bloque de codigo hasta que una condicion cambie. La condicion de una vuelta puede ser al final tambien, asegurando que la vuelta se ejecute una vez a lo minimo.
+
+```
+var n = 2
+while n < 100 {
+    n = n * 2
+}
+print(n)
+ 
+var m = 2
+repeat {
+    m = m * 2
+} while m < 100
+print(m)
+```
+
+Puedes guardar una indice en una vuelta, usando ```..<``` para hacer un rango de indices, o mediante initializacion explicita, condicion, e incremento. Estas dos vueltas hacen lo mismo:
+
+```
+var primeraVuelta = 0
+for i in 0..<4 {
+    primeraVuelta += i
+}
+print(primeraVuelta)
+ 
+var segundaVuelta = 0
+for var i = 0; i < 4; ++i {
+    segundaVueltaFor += i
+}
+print(segundaVuelta)
+```
+
+### [Funciones](https://es.wikipedia.org/wiki/Subrutina) y [Clausuras](https://es.wikipedia.org/wiki/Clausura_(informática))
+
+Usa ```func``` para declarar una funcion. Llama una funcion anexando una lista de argumentos en parentesis a la nombre de la funcion. Usa ```->``` para separar los nombres de los parametros y tipos del tipo de valor de retorno de la funcion.
+
+```
+func saludar(nombre: String, dia: String) -> String {
+	return "Hola \(nombre), hoy es \(dia)."
+}
+
+saludar("Bob", dia: "Martes")
+```
+
+#### Experimento
+Remueve el parametro ```dia```. Anade un parametro que incluya el almuerzo de hoy (menu del dia) en el saludo.
+
+Usa una [tupla](https://es.wikipedia.org/wiki/Tupla) (*tuple*) para hacer un valor compuesta: por ejemplo, para retornar multiples valores de una funcion. Los elementos de una tupla se pueden referir por nombre o numero.
+
+```
+func calcularEstadisticas(puntajes: [Int]) -> (min: Int, max: Int, sum: Int) {
+    var min = scores[0]
+    var max = scores[0]
+    var sum = 0
+    
+    for puntaje in puntajes {
+        if puntaje > max {
+            max = puntaje
+        } else if puntaje < min {
+            min = puntaje
+        }
+        sum += puntaje
+    }
+    
+    return (min, max, sum)
+}
+let estadisticas = calcularEstadisticas([5, 3, 100, 3, 9])
+print(estadisticas.sum)
+print(estadisticas.2)
+```
+
+
+
+
+
 
