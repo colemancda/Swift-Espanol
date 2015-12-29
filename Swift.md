@@ -2,9 +2,9 @@
 
 ## Sobre Swift
 
-*Swift* es una nueva lenguaje de programmacion para applicaciones de iOS, OS X, watchOS, y tvOS que estan cimentados en lo mejor de *C* y *Objective-C*, sin las restricciones de compatibilidad con C. Swift adopta patrones de programmacion seguros y añade caracterisitacas modernas para hacer programacion mas facil, mas flexible, y mas divertido. La implementacion nueva y limpia de Swift, apoyado por las librerias maduras de *Cocoa* y *Cocoa Touch*, es una oportunidad para reimaginar como funciona el desarollo de Software.
+[*Swift*](https://es.wikipedia.org/wiki/Swift_(lenguaje_de_programación)) es una nueva lenguaje de programmacion para applicaciones de iOS, OS X, watchOS, y tvOS que estan cimentados en lo mejor de [*C*](https://es.wikipedia.org/wiki/C_(lenguaje_de_programación)) y [*Objective-C*](https://es.wikipedia.org/wiki/Objective-C), sin las restricciones de compatibilidad con C. Swift adopta patrones de programmacion seguros y añade caracterisitacas modernas para hacer programacion mas facil, mas flexible, y mas divertido. La implementacion nueva y limpia de Swift, apoyado por las librerias maduras de [*Cocoa*](https://es.wikipedia.org/wiki/Cocoa_(informática)) y [*Cocoa Touch*](https://es.wikipedia.org/wiki/Cocoa_Touch), es una oportunidad para reimaginar como funciona el desarollo de Software.
 
-El proceso de la creacion de Swift ha estado ocurriendo por varios años. Apple creo el cimiento para Swift cuando avanzamos nuestra infraestructura de compilador, debuggeador y librerias. Hemos simplificado manejo de memoria con Contador de Referencia Automatico (*Automatic Memory Management* o *ARC*). Nuestras librerias, construidas sobre la base solida de *Foundation* y Cocoa, ha sido modernizada y estandarizado. Objective-C mismo ha evolucionado para soportar bloques, literales de colleciones, y modulos, habilitando que librerias adopten technologias de lenguajes modernas sin obstaculos. Gracias a este trabajo, podemos introducir una nueva lengauaje de desarollo para el futuro de desarollo de Software para las plataformas de Apple.
+El proceso de la creacion de Swift ha estado ocurriendo por varios años. Apple creo el cimiento para Swift cuando avanzamos nuestra infraestructura de compilador, debuggeador y librerias. Hemos simplificado manejo de memoria con [Contabilidad de Referencia Automatica](https://es.wikipedia.org/wiki/Contabilidad_de_Referencia_Automatica) (*Automatic Memory Management*, *ARC*). Nuestras librerias, construidas sobre la base solida de [*Foundation* y Cocoa](https://es.wikipedia.org/wiki/Cocoa_(informática)), ha sido modernizada y estandarizado. Objective-C mismo ha evolucionado para soportar [bloques](https://es.wikipedia.org/wiki/Clausura_(informática)), literales de colleciones, y modulos, habilitando que librerias adopten technologias de lenguajes modernas sin obstaculos. Gracias a este trabajo, podemos introducir una nueva lengauaje de desarollo para el futuro de desarollo de Software para las plataformas de Apple.
 
 Swift se siente familiar para desarolladores de Objective-C. Adopta la legibilidad de parametros nombrados y el poder del modelo de objectos dynamicos de Objective-C. Proveee acceso sin interrupciones a librerias existentes de Cocoa y completa interoperabilidad con codigo Objective-C. Construyendo encima de esta fundacion, Swift introduce muchos nuevos conceptos y unifica las porciones procedurales y orientados a objectos del lenguaje.
 
@@ -71,7 +71,7 @@ let frutaResumen = "Yo tengo \(manzanas + narajas) pedazos de fruta."
 #### Experimento
 Usa ```\()``` para incluir un calculo de punto flotante en un texto y para incluir el nombre de alguien en un saludo.
 
-Crea arreglos (*array*) y diccionarios (*dictionaries*) usando brackets (```[]```) y accede sus elementos escribiendo el indice (*index*) o llave (*key*) en brackets. Una comma se permite despues del primer elemento.
+Crea [arreglos](https://es.wikipedia.org/wiki/Vector_(informática)) (*array*) y [diccionarios](https://es.wikipedia.org/wiki/Vector_asociativo) (*dictionaries*) usando brackets (```[]```) y accede sus elementos escribiendo el indice (*index*) o llave (*key*) en brackets. Una comma se permite despues del primer elemento.
 
 ```
 var miListaDeCompras = ["bagre", "agua", "tulipanes", "pintura azul"]
@@ -93,7 +93,7 @@ profesiones = [:]
 ```
 
 ### Control de Flujo
-Usa ```if``` y ```switch``` para crear condicionales, y usa ```for```-```in```, ```for```, ```while```, y ```repeat``` para hacer una vuelta (*loop*). Parentesis cerrando la condicion o vuelta son opcionales. Llaves sobre el cuerpo son requeridos.
+Usa ```if``` y ```switch``` para crear [sentencias condicionales](https://es.wikipedia.org/wiki/Sentencia_condicional), y usa ```for```-```in```, ```for```, ```while```, y ```repeat``` para hacer un [ciclo](https://es.wikipedia.org/wiki/Bucle_(programación)) (*loop*). Parentesis cerrando la condicion o ciclo son opcionales. Llaves sobre el cuerpo son requeridos.
 
 ```
 let puntajesIndividuales = [75, 43, 103, 87, 12]
@@ -111,7 +111,7 @@ for puntaje in puntajesIndividuales {
 print(puntajeDeEquipo)
 ```
 
-En una sentencia de ```if```, el condicional deberia ser una expresion Booleana (*Boolean*, *Bool*), lo cual significa que codigo como ```if score { ... }``` es un error, no una comparision implicita a cero. Puedes usar ```if``` y ```let``` juntos para trabajar con valores que podrian estar faltantes. Estos valores se representa como opcionales (*optionals*). Un valor opcional contiene un valor o ```nil``` (nulo) para representar que un valor esta faltando. Escribe un signo de interrogacion (```?```) despues del tipo de valor para marcar el valor como opcional.
+En una sentencia de ```if```, el condicional deberia ser una expresion [Booleana ](https://es.wikipedia.org/wiki/Tipo_de_dato_lógico) (*Boolean*, *Bool*), lo cual significa que codigo como ```if score { ... }``` es un error, no una comparision implicita a cero. Puedes usar ```if``` y ```let``` juntos para trabajar con valores que podrian estar faltantes. Estos valores se representa como opcionales (*optionals*). Un valor opcional contiene un valor o ```nil``` (nulo) para representar que un valor esta faltando. Escribe un signo de interrogacion (```?```) despues del tipo de valor para marcar el valor como opcional.
 
 ```
 var textoOpcional: String? = "Hello"
@@ -201,17 +201,17 @@ print(m)
 Puedes guardar una indice en una vuelta, usando ```..<``` para hacer un rango de indices, o mediante initializacion explicita, condicion, e incremento. Estas dos vueltas hacen lo mismo:
 
 ```
-var primeraVuelta = 0
+var primerCiclo = 0
 for i in 0..<4 {
-    primeraVuelta += i
+    primerCiclo += i
 }
-print(primeraVuelta)
+print(primerCiclo)
  
-var segundaVuelta = 0
+var segundoCiclo = 0
 for var i = 0; i < 4; ++i {
-    segundaVueltaFor += i
+    segundoCiclo += i
 }
-print(segundaVuelta)
+print(segundoCiclo)
 ```
 
 ### [Funciones](https://es.wikipedia.org/wiki/Subrutina) y [Clausuras](https://es.wikipedia.org/wiki/Clausura_(informática))
@@ -252,6 +252,24 @@ let estadisticas = calcularEstadisticas([5, 3, 100, 3, 9])
 print(estadisticas.sum)
 print(estadisticas.2)
 ```
+
+Funciones tambien pueden tomar una cantidad variada de argumentos, collecionandolos en un arreglo.
+
+```
+func suma(numeros: Int...) -> Int {
+	var suma = 0
+	for numero in numeros {
+		suma += numero
+	}
+	return suma
+}
+suma()
+suma(42, 597, 12)
+```
+
+#### Experimento
+Escribe una funcion que calcula el numero promedio de argumentos.
+
 
 
 
