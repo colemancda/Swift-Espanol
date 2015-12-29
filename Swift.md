@@ -22,7 +22,7 @@ Tradicion sugiere que el primer programa en una nueva lenguaje de desarollo debe
 print("Hola, mundo!")
 ```
 
-Si has escrito codigo en C or Objective-C, este sintaxsis deberia de verse familiar para usted. En Swift, esta linea de codigo is un programa completo. No necesitas importar una libreria separada para funcionalidad como entrada y salida (*input/output* o *IO*) o manejo de texto (*string*). Codigo escrito a nivel (*scope*) global es usado como un punto de entrada para la aplicacion, entonces no necesitas una funcion ```main()```. Tampoco necesitas escribir semicolones al final de cada sentencia.
+Si has escrito codigo en C or Objective-C, este sintaxsis deberia de verse familiar para usted. En Swift, esta linea de codigo is un programa completo. No necesitas importar una libreria separada para funcionalidad como entrada y salida (*input/output*, *IO*) o manejo de texto (*string*). Codigo escrito a nivel (or contexto) (*scope*) global es usado como un punto de entrada para la aplicacion, entonces no necesitas una funcion ```main()```. Tampoco necesitas escribir semicolones al final de cada sentencia.
 
 Esta guia te da suficiente informacion para empezar a escribir codigo en Swift mediante mostrandote como implementar una variedad de tareas de programmacion. No te preocupes si no entendiste algo, todo introducido en este libro esta explicado en detalle en el resto del libro.
 
@@ -335,8 +335,118 @@ let numerosMapeados = numeros.map({ numero in 3 * numero })
 print(numerosMapeados)
 ```
 
+Puedes referir a parametros por numero envez de su nombre, esta estrategia es especialmente usable en clausuras cortos. Una clausuras pasado como un ultimo argumento puede aparecer immediatamente despues de los parentesis. Cuando una clausura es el unico argumento a una funcion, puedes omitir los parentesis completamente.
 
+```
+let numerosOrdenados = numeros.sort { 0$ > $1 }
+print(numerosOrdenados)
+```
 
+### [Objetos](https://es.wikipedia.org/wiki/Programación_orientada_a_objetos) y [Clases](https://es.wikipedia.org/wiki/Clase_(informática))
 
+Usa ```class``` seguido del nombre de la clase para crear una clase. Una declaracion de una propiedad en una clase es escrita de la misma manera que la declaracion de una constante o variable, con la excepcion de que esta en el contexto de la clase. Declaraciones de metodos y funciones estan escritas de la misma manera.
 
+```
+class Figura {
+	var numeroDeLados = 0
+	func descripcionSimple() -> String {
+		return "Una figura con \(numeroDeLados) lados."
+	}
+}
+```
+
+#### Experimento
+Anade una propiedad constante con ```let```, y anade otra propiedad que toma un argumento.
+
+Crea una instancia de una clase poniendo parentesis despues del nombre de la clase. Usa puntos (```.```) para accedar los propiedades y metodos de la instancia.
+
+```
+var figura = Figura()
+figura.numeroDeLados = 7
+var descripcionDeFigura = figura.descripcionSimple()
+```
+
+A esta version de la clase ```Figura``` le esta faltando algo importante: un initilizador para configurar la clase cuando una instancia se crea. Usa ```init``` para crear uno.
+
+```
+class FiguraNombrado {
+	var numeroDeLados: Int = 0
+	var nombre: String
+	
+	init(nombre: String) {
+		self.nombre = nombre
+	}
+	
+	func descripcionSimple() -> String {
+		return "Una figura con \(numeroDeLados) lados."
+	}
+}
+```
+
+Nota como ```self``` es usado para distinguir la propiedad ```nombre``` del argumento al initializador tambien llamado ```nombre```. Los argumentos al initializador son pasados como una llamada de funcion cuando creas una instancia de la clase. Toda propiedad necesita un valor asignado, sea en su declaracion (como con ```numeroDeLados```) o en el initializador (como con ```nombre```).
+
+Usa ```deinit``` para crear el deinitializador si necesitas hacer operaciones de limpieza cuando el objeto es deallocado.
+
+Subclases incluyen el nombre superclase despues del nombre de su clase, separado por un colon. No hay requerimiento para que clases sean el subclase de alguna clase principal, entonces puede incluir o omitir una superclase segun tus necesidades.
+
+Metodos en una subclase que redefinen la implementacion de la superclase estan marcados con ```override```. Redefinir un metodo por accidente, sin marcar ```override```, es detectado por el compilador como un error. El compilador tambien detecta metodos con ```override``` que en verdad no redefinen ningun metodo en su superclase.
+
+```
+class Cuadrado: FiguraNombrado {
+    var anchoDeLado: Double
+    
+    init(anchoDeLado: Double, nombre: String) {
+        self.anchoDeLado = anchoDeLado
+        super.init(nombre: nombre)
+        numeroDeLados = 4
+    }
+    
+    func area() ->  Double {
+        return anchoDeLado * anchoDeLado
+    }
+    
+    override func descripcionSimple() -> String {
+        return "Un cuadrado con \(anchoDeLado) ancho de lados."
+    }
+}
+let prueba = Cuadrado(anchoDeLado: 5.2, nombre: "mi cuadrado de prueba")
+prueba.area()
+prueba.descripcionSimple()
+```
+
+#### Experimento
+Haz otra subclase de ```FiguraNombrado``` llamado ```Circulo``` que toma una radio y un nombre como argumentos a su initializador. Implementa los metodos ```area()``` y ```descripcionSimple()``` en la clase ```Circulo```.
+
+Ademas de propiedades simples que son guardados, propiedades pueden tener un accesor (*getter*) y fijador (*setter*).
+
+```
+class TrianguloEquilateral: FiguraNombrado {
+	var anchoDeLado: Double = 0.0
+	
+	init(anchoDeLado: Double, nombre: String) {
+        self.anchoDeLado = anchoDeLado
+        super.init(nombre: nombre)
+        numeroDeLados = 4
+    }
+    
+    var perimetro: Double {
+    	get {
+    		return 3.0 * anchoDeLado
+    	}
+    	set {
+    		anchoDeLado = newValue / 3.0
+    	}
+    }
+    
+    override func descripcionSimple() -> String {
+    	return "Un triangulo equilateral con \(anchoDeLado) ancho de lados."
+    }
+}
+var triangle = TrianguloEquilateral(anchoDeLado: 3.1, nombre: "un triangulo")
+print(triangulo.perimetro)
+triangulo.perimetro = 9.9
+print(triangulo. anchoDeLado)
+```
+
+En el fijador para ```perimetro```, el nuevo valor tiene el nombre implicita de ```newValue```. Puedes proveer un nombre explicita en los parentesis despues de ```set```.
 
