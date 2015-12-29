@@ -6,38 +6,38 @@
 
 El proceso de la creación de Swift se ha dado por varios años. Apple creó el cimiento para este, mejorando nuestra infraestructura de compilador, debuggeador y marco operativo. Hemos simplificado el manejo de la  memoria gracias a la creación de  [Contabilidad de Referencia Automatica](https://es.wikipedia.org/wiki/Contabilidad_de_Referencia_Automatica) (*Automatic Memory Management*, *ARC*). Nuestras estructuras, construidas sobre la base sólida de [*Foundation* y Cocoa](https://es.wikipedia.org/wiki/Cocoa_(informática)), han sido modernizadas y estandarizadas. Objective-C,  por sí mismo,  ha evolucionado para soportar [bloques](https://es.wikipedia.org/wiki/Clausura_(informática)),  colecciones literales y módulos, habilitando a que las infraestructuras adopten tecnologías de lenguas modernas sin obstáculos. Gracias a este trabajo, podemos introducir un nuevo lengauaje de desarollo para el futuro del Software de las plataformas de Apple.
 
-Swift se siente familiar para desarolladores de Objective-C. Adopta la legibilidad de parámetros nombrados por Objective- C, así como el objetivo dinámico  del modelo. Provée acceso sin interrupciones a librerias existentes de Cocoa y completa interoperabilidad con códigos de Objective-C. Construyendo encima de esta fundacion, Swift introduce muchos nuevos conceptos y unifica las porciones procedurales y orientados a objectos del lenguaje.
+Swift se siente familiar para desarolladores de Objective-C. Adopta la legibilidad de parámetros nombrados por Objective- C, así como el objetivo dinámico  del modelo. Provée acceso sin interrupciones a estructuras existentes de Cocoa y completa interoperabilidad entre códigos de Objective-C. Construyendo a partir de esta fundación, Swift introduce muchos nuevos conceptos y unifica los procesos y objetivos a los que está orientado el lenguaje.
 
-Swift es amigable para nuevos programmadores. Es el primer lenguaje de programmacion de sistemas de calidad industrial que es tan expresivo y agradable como un lenguaje de *scripting*. Soporta parque de juegos (*playgrounds*), una caractrerisitca innovadora que permite programmadores experimentar con codigo Swift y ver los resultados immediatamente, sin el gasto de compilar y correr la applicacion.
+Swift es amigable para nuevos programadores. Es el primer lenguaje de programación de sistemas que cuenta con calidad industrial y  que, a su vez, es tan expresivo y agradable como un lenguaje de *scripting*. Soporta  *playgrounds*, una característica innovadora que da paso a la experimentación con el código Swift y  permite ver los resultados immediatamente, sin tener que compilar y activar la aplicación.
 
-Swift combina lo mejor en filosofias de lenguajes modernas con sabidura de la amplia cultura de ingeneria Apple. El compilador esta optimizado para rendimiento, y el lenguaje esta optimizada para desarollo, sin comprometer ninguno de los dos. Esta disenado para escalar de la implementacion de "```hola mundo```" a un sistema operativo entero. Todo esto hace que Swift sea una inversion segura para desarrolladores y Apple.
+Swift combina la mejor filosofía de los lenguajes modernos con la sabiduría de la amplia cultura en ingenería de Apple. El compilador está optimizado para el mejor rendimiento, y el lenguaje para un óptimo desarrollo, sin comprometer ninguno de los dos. Está diseñado para escalar de la implementacion de un "```hola mundo```" hasta un sistema operativo entero. Todo esto hace que Swift sea una inversión segura para desarrolladores y Apple.
 
-Swift is una manera fantastica para escribir applicaciones iOS, OS X, watchOS, y tvOS, y continuara evolucionandose con nuevas caracterisitcas y capabilidades. Nuestras metas para Swift son ambiciosas. No podemos esperar para ver que podras crear con ello.
+Swift es una manera fantástica para escribir aplicaciones iOS, OS X, watchOS, y tvOS, y continuará evolucionándose con nuevas características y nuevas capacidades. Nuestras metas para Swift son ambiciosas. No podemos esperar para ver qué podrás crear con ello.
 
-## Una Guia de Swift
+## Una Guía de Swift
 
-Tradicion sugiere que el primer programa en una nueva lenguaje de desarollo deberia imprimir las palabras "Hola, mundo!" en la pantalla. En Swift, esto se puede hacer con una sola linea de codigo:
+La tradición sugiere que el primer programa en un nuevo lenguaje de desarollo debería plasmar las palabras "Hola, mundo!" en la pantalla. En Swift, esto se puede hacer con una sola linea de código:
 
 ```
 print("Hola, mundo!")
 ```
 
-Si has escrito codigo en C or Objective-C, este sintaxsis deberia de verse familiar para usted. En Swift, esta linea de codigo is un programa completo. No necesitas importar una libreria separada para funcionalidad como entrada y salida (*input/output*, *IO*) o manejo de texto (*string*). Codigo escrito a nivel (or contexto) (*scope*) global es usado como un punto de entrada para la aplicacion, entonces no necesitas una funcion ```main()```. Tampoco necesitas escribir semicolones al final de cada sentencia.
+Si has escrito código en C o en  Objective-C, esta sintaxis debería serte familiar . En Swift, esta línea de código es un programa completo. No necesitas importar la información por separado para  que funcione de mejor como en los casos de entrada y salida (*input/output*, *IO*) o manejo de texto (*string*). El código escrito a nivel mundial (*scope*)  es usado como un punto de entrada para la aplicación, entonces no necesitas una función principal o  ```main()```, así como tampoco lo es el escribir punto y coma al final de cada sentencia.
 
-Esta guia te da suficiente informacion para empezar a escribir codigo en Swift mediante mostrandote como implementar una variedad de tareas de programmacion. No te preocupes si no entendiste algo, todo introducido en este libro esta explicado en detalle en el resto del libro.
+Esta guia te da suficiente información para empezar a escribir códigos en Swift  a partir de la muestra del cómo implementar una variedad de tareas de programación. No te preocupes si no entendiste algo, todo lo aquí mencionado está explicado a detalle en el resto del libro.
 
 ### Valores Simples
 
-Se usa ```let``` para crear una constante y ```var``` para crear una variable. El valor de un constante no necesita saberse a la hora de compilar, pero deberias asignarle un valor exactamente una vez. Esto significa que puedes usar constantes para nombrar un valor que se determina una vez, pero se usa en muchos lugares.
+Se usa ```let``` para crear una constante y ```var``` para crear una variable. El valor de una constante no necesita saberse a la hora de compilar, pero hay que asignarle un valor exacto de una vez. Esto significa que puedes usar constantes para nombrar un valor que se determina una vez, pero te permitiría  usarlo en muchos lugares.
 
 ```
 var miVariable = 42
 miVariable = 50
 let miConstante = 42
 ```
-Una constante o variable deberia de tener el mismo tipo de valor que le quieras asignar. Sin embargo, no deberias de siempre tener que escribir el tipo explicitamente. Proveer un valor cuando creas la constante o variable, permite que el compilador dedusca su tipo. En el ejemplo de arriba, el compilador deduce que ```myVariable``` es un numero entero (*Integer*) por que su valor inicial es un numero entero.
+Una constante o variable debería  tener el mismo tipo de valor que le quieras asignar. Sin embargo, no necesitas escribirlo explicitamente todo el tiempo. Proveer un valor cuando creas la constante o variable, permite que el compilador deduzca su tipo. En el ejemplo de arriba, el compilador deduce que ```myVariable``` es un número entero (*Integer*) por que su valor inicial es un número entero.
 
-Si el valor inicial no provee suficiente informacion (o si no hay un valor inicial), especifica el tipo via escribiendolo despues del variable, separado por un colon.
+Si el valor inicial no provée suficiente información (o si no hay un valor inicial), especifica el tipo escribiéndolo después de la variable, separado por dos puntos.
 
 ```
 let enteroImplicito = 70
