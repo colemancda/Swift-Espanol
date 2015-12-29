@@ -4,9 +4,9 @@
 
 [*Swift*](https://es.wikipedia.org/wiki/Swift_(lenguaje_de_programación)) es un nuevo lenguaje de programación para aplicaciones de iOS, OS X, watchOS, y tvOS que estan cimentados en lo mejor de [*C*](https://es.wikipedia.org/wiki/C_(lenguaje_de_programación)) y [*Objective-C*](https://es.wikipedia.org/wiki/Objective-C), sin las restricciones de compatibilidad con C. Swift adopta patrones de programación seguros y añade características modernas para hacer el proceso más fácil, más flexible y más divertido. La implementación nueva y limpia de Swift, apoyado por los marcos operativos de [*Cocoa*](https://es.wikipedia.org/wiki/Cocoa_(informática)) y [*Cocoa Touch*](https://es.wikipedia.org/wiki/Cocoa_Touch) dan una oportunidad para reimaginar como funciona el desarollo de un Software.
 
-El proceso de la creacion de Swift ha estado ocurriendo por varios años. Apple creo el cimiento para este cuando avanzamos nuestra infraestructura de compilador, debuggeador y librerias. Hemos simplificado manejo de memoria con [Contabilidad de Referencia Automatica](https://es.wikipedia.org/wiki/Contabilidad_de_Referencia_Automatica) (*Automatic Memory Management*, *ARC*). Nuestras librerias, construidas sobre la base solida de [*Foundation* y Cocoa](https://es.wikipedia.org/wiki/Cocoa_(informática)), ha sido modernizada y estandarizado. Objective-C mismo ha evolucionado para soportar [bloques](https://es.wikipedia.org/wiki/Clausura_(informática)), literales de colleciones, y modulos, habilitando que librerias adopten technologias de lenguajes modernas sin obstaculos. Gracias a este trabajo, podemos introducir una nueva lengauaje de desarollo para el futuro de desarollo de Software para las plataformas de Apple.
+El proceso de la creación de Swift se ha dado por varios años. Apple creó el cimiento para este, mejorando nuestra infraestructura de compilador, debuggeador y marco operativo. Hemos simplificado el manejo de la  memoria gracias a la creación de  [Contabilidad de Referencia Automatica](https://es.wikipedia.org/wiki/Contabilidad_de_Referencia_Automatica) (*Automatic Memory Management*, *ARC*). Nuestras estructuras, construidas sobre la base sólida de [*Foundation* y Cocoa](https://es.wikipedia.org/wiki/Cocoa_(informática)), han sido modernizadas y estandarizadas. Objective-C,  por sí mismo,  ha evolucionado para soportar [bloques](https://es.wikipedia.org/wiki/Clausura_(informática)),  colecciones literales y módulos, habilitando a que las infraestructuras adopten tecnologías de lenguas modernas sin obstáculos. Gracias a este trabajo, podemos introducir un nuevo lengauaje de desarollo para el futuro del Software de las plataformas de Apple.
 
-Swift se siente familiar para desarolladores de Objective-C. Adopta la legibilidad de parametros nombrados y el poder del modelo de objectos dynamicos de Objective-C. Proveee acceso sin interrupciones a librerias existentes de Cocoa y completa interoperabilidad con codigo Objective-C. Construyendo encima de esta fundacion, Swift introduce muchos nuevos conceptos y unifica las porciones procedurales y orientados a objectos del lenguaje.
+Swift se siente familiar para desarolladores de Objective-C. Adopta la legibilidad de parámetros nombrados por Objective- C, así como el objetivo dinámico  del modelo. Provée acceso sin interrupciones a librerias existentes de Cocoa y completa interoperabilidad con códigos de Objective-C. Construyendo encima de esta fundacion, Swift introduce muchos nuevos conceptos y unifica las porciones procedurales y orientados a objectos del lenguaje.
 
 Swift es amigable para nuevos programmadores. Es el primer lenguaje de programmacion de sistemas de calidad industrial que es tan expresivo y agradable como un lenguaje de *scripting*. Soporta parque de juegos (*playgrounds*), una caractrerisitca innovadora que permite programmadores experimentar con codigo Swift y ver los resultados immediatamente, sin el gasto de compilar y correr la applicacion.
 
@@ -415,7 +415,7 @@ prueba.descripcionSimple()
 ```
 
 #### Experimento
-Haz otra subclase de ```FiguraNombrado``` llamado ```Circulo``` que toma una radio y un nombre como argumentos a su initializador. Implementa los metodos ```area()``` y ```descripcionSimple()``` en la clase ```Circulo```.
+Existe otra subclase de ```FiguraNombrado``` llamado ```Circulo``` que toma una radio y un nombre como argumentos a su initializador. Implementa los metodos ```area()``` y ```descripcionSimple()``` en la clase ```Circulo```.
 
 Ademas de propiedades simples que son guardados, propiedades pueden tener un accesor (*getter*) y fijador (*setter*).
 
@@ -448,5 +448,5 @@ triangulo.perimetro = 9.9
 print(triangulo. anchoDeLado)
 ```
 
-En el fijador para ```perimetro```, el nuevo valor tiene el nombre implicita de ```newValue```. Puedes proveer un nombre explicita en los parentesis despues de ```set```.
+En el fijador para ```perimetro```, el nuevo valor tiene el nombre implícito de ```newValue```. Puedes proveer un nombre alternativo o explícito  en los parentesis después de ```set```.
 
