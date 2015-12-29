@@ -10,7 +10,7 @@ Swift se siente familiar para desarolladores de Objective-C. Adopta la legibilid
 
 Swift es amigable para nuevos programmadores. Es el primer lenguaje de programmacion de sistemas de calidad industrial que es tan expresivo y agradable como un lenguaje de *scripting*. Soporta parque de juegos (*playgrounds*), una caractrerisitca innovadora que permite programmadores experimentar con codigo Swift y ver los resultados immediatamente, sin el gasto de compilar y correr la applicacion.
 
-Swift combina lo mejor en filosofias de lenguajes modernas con sabidura de la amplia cultura de ingeneria Apple. El compilador esta optimizado para rendimiento, y el lenguaje esta optimizada para desarollo, sin comprometer ninguno de los dos. Esta disenado para escalar de la implementacion de "```hello world```" a un sistema operativo entero. Todo esto hace que Swift sea una inversion segura para desarrolladores y Apple.
+Swift combina lo mejor en filosofias de lenguajes modernas con sabidura de la amplia cultura de ingeneria Apple. El compilador esta optimizado para rendimiento, y el lenguaje esta optimizada para desarollo, sin comprometer ninguno de los dos. Esta disenado para escalar de la implementacion de "```hola mundo```" a un sistema operativo entero. Todo esto hace que Swift sea una inversion segura para desarrolladores y Apple.
 
 Swift is una manera fantastica para escribir applicaciones iOS, OS X, watchOS, y tvOS, y continuara evolucionandose con nuevas caracterisitcas y capabilidades. Nuestras metas para Swift son ambiciosas. No podemos esperar para ver que podras crear con ello.
 
@@ -92,7 +92,7 @@ lista de compras = []
 profesiones = [:]
 ```
 
-### Control de Flujo
+### [Control de Flujo](https://es.wikipedia.org/wiki/Estructuras_de_control)
 Usa ```if``` y ```switch``` para crear [sentencias condicionales](https://es.wikipedia.org/wiki/Sentencia_condicional), y usa ```for```-```in```, ```for```, ```while```, y ```repeat``` para hacer un [ciclo](https://es.wikipedia.org/wiki/Bucle_(programación)) (*loop*). Parentesis cerrando la condicion o ciclo son opcionales. Llaves sobre el cuerpo son requeridos.
 
 ```
@@ -111,7 +111,7 @@ for puntaje in puntajesIndividuales {
 print(puntajeDeEquipo)
 ```
 
-En una sentencia de ```if```, el condicional deberia ser una expresion [Booleana ](https://es.wikipedia.org/wiki/Tipo_de_dato_lógico) (*Boolean*, *Bool*), lo cual significa que codigo como ```if score { ... }``` es un error, no una comparision implicita a cero. Puedes usar ```if``` y ```let``` juntos para trabajar con valores que podrian estar faltantes. Estos valores se representa como opcionales (*optionals*). Un valor opcional contiene un valor o ```nil``` (nulo) para representar que un valor esta faltando. Escribe un signo de interrogacion (```?```) despues del tipo de valor para marcar el valor como opcional.
+En una sentencia de ```if```, el condicional deberia ser una expresion [Booleana ](https://es.wikipedia.org/wiki/Tipo_de_dato_lógico) (*Boolean*, *Bool*), lo cual significa que codigo como ```if score { ... }``` es un error, no una comparacion implicita a cero. Puedes usar ```if``` y ```let``` juntos para trabajar con valores que podrian estar faltantes. Estos valores se representa como opcionales (*optionals*). Un valor opcional contiene un valor o ```nil``` (nulo) para representar que un valor esta faltando. Escribe un signo de interrogacion (```?```) despues del tipo de valor para marcar el valor como opcional.
 
 ```
 var textoOpcional: String? = "Hello"
@@ -182,7 +182,7 @@ print(masGrande)”
 #### Experimento
 Anade otra variable para registar que tipo de numero era el mas grande, asi tambien como que era ese numero grande.
 
-Usa ```while``` para repetir un bloque de codigo hasta que una condicion cambie. La condicion de una vuelta puede ser al final tambien, asegurando que la vuelta se ejecute una vez a lo minimo.
+Usa ```while``` para repetir un bloque de codigo hasta que una condicion cambie. La condicion de un ciclo puede ser al final tambien, asegurando que la ciclo se ejecute una vez a lo minimo.
 
 ```
 var n = 2
@@ -198,7 +198,7 @@ repeat {
 print(m)
 ```
 
-Puedes guardar una indice en una vuelta, usando ```..<``` para hacer un rango de indices, o mediante initializacion explicita, condicion, e incremento. Estas dos vueltas hacen lo mismo:
+Puedes guardar una indice en una ciclo, usando ```..<``` para hacer un rango de indices, o mediante initializacion explicita, condicion, e incremento. Estas dos ciclos hacen lo mismo:
 
 ```
 var primerCiclo = 0
@@ -268,8 +268,72 @@ suma(42, 597, 12)
 ```
 
 #### Experimento
-Escribe una funcion que calcula el numero promedio de argumentos.
+Escribe una funcion que calcula el valor promedio de sus argumentos.
 
+Funciones pueden ser anidados. Funciones anidados tienen accesso a variables que fueron declaradas en la funcion exterior. Puedes usar funciones anidados para organizar el codigo en una funcion que es larga o compleja.
+
+```
+func retornarQuince() -> {
+	var y = 10
+	func añadir() {
+		y += 5
+	}
+	añadir()
+	return y
+}
+retornarQuince()
+```
+
+Funciones son un tipo de primera clase. Esto significa que una funcion puede returnar otra funcion como su valor.
+
+```
+func crearIncrementador() -> ((Int) -> (Int)) {
+	func añadeUno(numero: Int) -> Int {
+		return 1 + numero
+	}
+	return añadeUno
+}
+var incrementa = crearIncrementador()
+incrementa(7)
+```
+
+Una funcion puede tomar otra funcion como uno de sus argumentos.
+
+```
+func tieneAlgunPareja(lista: [Int], condicion: (Int -> Bool)) -> Bool {
+	for elemento in lista {
+		if condicion(elemento) {
+			return true
+		}
+	}
+	return false
+}
+
+func menosQueDiez(numero: Int) -> Bool {
+	return numero < 10
+}
+var numeros = [20, 19, 7, 12]
+tieneAlgunPareja(numeros, condicion: menosQueDiez)
+```
+
+Funciones en verdad son un case especial de clausuras: bloques de codigo que pueden ser llamados despues. El codigo en una clausura tiene accesso a cosas como variables y funciones que estaban disponibles en el contexto donde fue creado, aun si la clausura esta ejecutandose en otro contexto: ya viste un ejemplo de esto con funciones anidadas. Puedes escribir una clausura sin nombre via encerrando codigo con llaves (```{}```). Usa ```in``` para separar los argumentos y tipo de valor retornado del cuerpo de la funcion.
+
+```
+numeros.map({ (numero: Int) -> Int in
+	let resultado = 3 * numero
+	return resultado
+})
+```
+
+#### Experimento
+Vuelve a escribir la clausura para que retorne cero para todo numero impar.
+
+Tienes varias opciones para escribir clausuras mas concisamente. Cuando ya se sabe el tipo de clausura, asi como una [retrollamada](https://es.wikipedia.org/wiki/Callback_(informática)) (*callback*) para un [delegado](https://es.wikipedia.org/wiki/Delegación_(informática)) (*delegate*), puedes omitir el tipo de los parametros, valor de retorno o ambos. Clausuras de una sola sentencia implicitamente retornan el value de su unica sentencia.
+
+```
+let numerosMapeados = numeros.map({ numero in 3 * numero })
+print(numerosMapeados)
+```
 
 
 
