@@ -71,7 +71,7 @@ let frutaResumen = "Yo tengo \(manzanas + narajas) pedazos de fruta."
 #### Experimento
 Usa ```\()``` para incluir un calculo de punto flotante en un texto y para incluir el nombre de alguien en un saludo.
 
-Crea arreglos (*array*) y *diccionarios* dictionaries usando brackets (```[]```) y accede sus elementos escribiendo el indice o (*key*) en brackets. Una comma se permite despues del primer elemento.
+Crea arreglos (*array*) y diccionarios (*dictionaries*) usando brackets (```[]```) y accede sus elementos escribiendo el indice (*index*) o llave (*key*) en brackets. Una comma se permite despues del primer elemento.
 
 ```
 var miListaDeCompras = ["bagre", "agua", "tulipanes", "pintura azul"]
@@ -85,4 +85,83 @@ var profesiones = [
 profesiones["Jayne"] = "Relaciones Publicas"
 ```
 
-Si la informacion de tipo puede ser deducida
+Si la informacion de tipo puede ser deducida, puedes escribir un arreglo vacio como ```[]``` y un diccionario vacio como ```[:]```: Por ejemplo, cuando creas un nuevo valor para una variable, o pasas un arguemento a una funcion.
+
+```
+lista de compras = []
+profesiones = [:]
+```
+
+### Control de Flujo
+Usa ```if``` y ```switch``` para crear condicionales, y usa ```for```-```in```, ```for```, ```while```, y ```repeat``` para hacer una vuelta (*loop*). Parentesis cerrando la condicion o vuelta son opcionales. Llaves sobre el cuerpo son requeridos.
+
+```
+let puntajesIndividuales = [75, 43, 103, 87, 12]
+
+var puntajeDeEquipo = 0
+
+for puntaje in puntajesIndividuales {
+
+	if puntaje > 50 {
+		puntajeDeEquipo += 3		
+	} else {
+		puntajeDeEquipo += 1
+	}
+}
+print(puntajeDeEquipo)
+```
+
+En una sentencia de ```if```, el condicional deberia ser una expresion Booleana (*Boolean*, *Bool*), lo cual significa que codigo como ```if score { ... }``` es un error, no una comparision implicita a cero. Puedes usar ```if``` y ```let``` juntos para trabajar con valores que podrian estar faltantes. Estos valores se representa como opcionales (*optionals*). Un valor opcional contiene un valor o ```nil``` (nulo) para representar que un valor esta faltando. Escribe un signo de interrogacion (```?```) despues del tipo de valor para marcar el valor como opcional.
+
+```
+var textoOpcional: String? = "Hello"
+print(textoOpcional == nil)
+ 
+var nombreOpcional: String? = "John Appleseed"
+var saludo = "Hello!"
+if let nombre = nombreOpcional {
+    saludo = "Hello, \(name)"
+}
+```
+
+#### Experimento
+Cambia ```textoOpcional``` a ```nil```. Que saludo obtienes? Añade una clausula de ```else``` que setea otro saludo si ```nombreOpcional``` es ```nil```.
+
+Si el valor opcional es ```nil```, el valor condicional es falso y el codigo en las llaves se saltea. De lo contrario, el valor opcional es desenvuelto y asignado al constante despues de ```let```, lo cual hace el valor desenvuelto disponible dentro del bloque de codigo.
+
+Otra manera de manejar valores opcionales es proveer un valor predeterminado usando el operador ```??```. Si el valor opcional esta faltando, el valor predeterminado es usado en su lugar.
+
+```
+let apodo: String? = nil
+let nombreCompleto: String = "John Appleseed"
+let saludoInformal = "Hola \(apodo ?? nombreCompleto)"
+```
+
+Interruptores (*switch*) soportan cualquier tipo de datos y una amplia variedad de operaciones de comparacion: no estan limitados a numeros enteros y preubas de igualdad.
+
+```
+let vegetal = "aji rojo"
+switch vegetal {
+case "apio":
+	print("Añade unas pasas y prepara un bocado")
+case "pepino", "berro":
+	print("Eso haria un buen sandwich")
+case let x where x.hasPrefix("aji")
+	print("Es un \(x) picante")
+default:
+	print("Todo sabe bien en sopa.")
+}
+```
+
+#### Experimento
+Intenta remover el caso predeterminado (```default:```). Que error recibes?
+
+Nota como ```let``` puede ser usado en un patron para asignar el valor que parejo esa parte del patron a un constante.
+
+Despues de ejecutar el codigo dentro del caso que emparejo, el programa sale (*exits*) del sentencia de interrupcion. Ejecuccion no continua al siguiente caso, entonces no hay necesidad del explicitamente cesar (*break*) el interruptor que esta al final del codigo de cada caso.
+
+Puedes usar ```for```-```in``` para iterar sobre elementos en un diccionario proveyendo una pareja de nombres que se usara para cada pareja de llave-valor (*key-value*). Dictionarios son una collecion sin orden, entonces sus llaves y valores son iteradas en una orden arbitriaria.
+
+```
+```
+
