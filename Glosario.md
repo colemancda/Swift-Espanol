@@ -9,12 +9,27 @@ Apple Inc. es una empresa multinacional estadounidense que diseña y produce equ
 - [Pagina Web](www.appple.com)
 
 ## C
-C es un lenguaje de programación originalmente desarrollado por Dennis M. Ritchie entre 1969 y 1972 en los Laboratorios Bell.
+Lenguaje de programación originalmente desarrollado por Dennis M. Ritchie entre 1969 y 1972 en los Laboratorios Bell.
 
 - [Wikipedia](https://es.wikipedia.org/wiki/C_(lenguaje_de_programación))
 
-## Marcos de Trabajo
+## Cocoa
+El marco de trabajo para desarollo de aplicaciones para la plataforma OS X (antes conocido como Macintosh).
 
+- [Wikipedia](https://es.wikipedia.org/wiki/Cocoa_(informática))
+
+## Cocoa Touch
+El marco de trabajo para desarollo de aplicaciones para la plataforma iOS (el sistema operativo de iPhone, iPod y iPad).
+
+- [Wikipedia](https://es.wikipedia.org/wiki/Cocoa_Touch)
+
+## Depurador
+Un depurador, es un programa usado para probar y depurar (eliminar) los errores de otros programas.
+
+- [Wikipedia](https://es.wikipedia.org/wiki/Depurador)
+
+## Marco de Trabajo
+Una estructura conceptual y tecnológica de soporte definido, normalmente con artefactos o módulos concretos de software, que puede servir de base para la organización y desarrollo de software.
 
 - [Wikipedia](https://es.wikipedia.org/wiki/Framework)
 
