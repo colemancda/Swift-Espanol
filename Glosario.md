@@ -63,10 +63,20 @@ Objective-C es un lenguaje de programación orientado a objetos creado como un s
 
 - [Wikipedia](https://es.wikipedia.org/wiki/Objective-C)
 
+## Orientado a Objetos
+La programación orientada a objetos (POO) es un paradigma de programación que usa objetos en sus interacciones, para diseñar aplicaciones y programas informáticos.
+
+- [Wikipedia](https://es.wikipedia.org/wiki/Programación_orientada_a_objetos)
+
 ## Parque de Juegos
 Ambiente de Swift que permite usar el lenguaje como si fuera interpretado y no compilado. Permite programmadores experimentar con codigo Swift y ver los resultados immediatamente, sin el gasto de compilar y correr la applicacion.
 
 - Ingles: Playground
+
+## Procedural
+La programación por procedimientos es un paradigma de la programación. Esta técnica consiste en basarse de un número muy bajo de expresiones repetidas, englobarlas todas en un procedimiento o función y llamarlo cada vez que tenga que ejecutarse.
+
+- [Wikipedia](https://es.wikipedia.org/wiki/Programación_por_procedimientos)
 
 ## Software
 Equipo lógico o soporte lógico de un sistema informático, que comprende el conjunto de los componentes lógicos necesarios que hacen posible la realización de tareas específicas, en contraposición a los componentes físicos que son llamados hardware.
