@@ -64,7 +64,9 @@ Objective-C es un lenguaje de programación orientado a objetos creado como un s
 - [Wikipedia](https://es.wikipedia.org/wiki/Objective-C)
 
 ## Parque de Juegos
+Ambiente de Swift que permite usar el lenguaje como si fuera interpretado y no compilado. Permite programmadores experimentar con codigo Swift y ver los resultados immediatamente, sin el gasto de compilar y correr la applicacion.
 
+- Ingles: Playground
 
 ## Software
 Equipo lógico o soporte lógico de un sistema informático, que comprende el conjunto de los componentes lógicos necesarios que hacen posible la realización de tareas específicas, en contraposición a los componentes físicos que son llamados hardware.
