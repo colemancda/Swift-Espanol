@@ -40,13 +40,6 @@ Un depurador, es un programa usado para probar y depurar (eliminar) los errores 
 # Foundation
 El marco de trabajo prinicipal para desarollo de aplicaciones para todas las platformas de Apple.
 
-# Intérprete
-Programa informático capaz de analizar y ejecutar otros programas. Los intérpretes se diferencian de los compiladores o de los ensambladores en que mientras estos traducen un programa desde su descripción en un lenguaje de programación al código de máquina del sistema, los intérpretes sólo realizan la traducción a medida que sea necesaria, típicamente, instrucción por instrucción, y normalmente no guardan el resultado de dicha traducción.
-
-- Wikipedia
-	- [Intérprete](https://es.wikipedia.org/wiki/Intérprete_(informática))
-	- [Script](https://es.wikipedia.org/wiki/Script)
-- Ingles: Interpreter, Script
 
 # Marco de Trabajo
 (*Framework* en Inglés) Una estructura conceptual y tecnológica de soporte definido, normalmente con artefactos o módulos concretos de software, que puede servir de base para la organización y desarrollo de software. [Wikipedia](https://es.wikipedia.org/wiki/Framework)
