@@ -5,5 +5,5 @@ Este libro es una traduccion de "*The Swift Programming Language*", que se encue
 ## Links
 
 - [swiftespanol.com](https://www.swiftespanol.com)
-- [GitBooks](https://www.gitbook.com/book/colemancda/swift-espanol/details)
+- [GitBooks](https://colemancda.gitbooks.io/swift-espanol/content/)
 - [GitHub](https://github.com/colemancda/Swift-Espanol)
