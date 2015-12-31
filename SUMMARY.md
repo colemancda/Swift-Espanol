@@ -1,7 +1,8 @@
 # Summary
 
 * Bienvenidos a Swift
-   * Sobre Swift
-   * Una Guia de Swift
-* [Guia de Lenguaje](11-sobre-swift.md)
+   * [Sobre Swift](1-1.md)
+   * [Una Guia de Swift](1-2.md)
+* Guia de Lenguaje
+	*  [Lo Basico](2-1.md)
 
