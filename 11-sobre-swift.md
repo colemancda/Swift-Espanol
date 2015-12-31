@@ -1,2 +1,0 @@
-# Guia de Lenguaje
-
