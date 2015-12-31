@@ -1,5 +1,9 @@
-# Swift-Espanol
-Guía de Lenguaje de Programación de Swift
+# El Lenguaje de Programación Swift
 
-## Source / Original
-Este libro es una traduccion de la version Open Source de "*The Swift Programming Language (2.2)*", que se encuentra en [swift.org](www.swift.org). 
+Este libro es una traduccion de "*The Swift Programming Language*", que se encuentra en [swift.org](www.swift.org).
+
+## Links
+
+- [swiftespanol.com](www.swiftespanol.com)
+- [GitBooks](https://www.gitbook.com/book/colemancda/swift-espanol/details)
+- [GitHub](https://github.com/colemancda/Swift-Espanol)
