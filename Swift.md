@@ -2,21 +2,21 @@
 
 ## Sobre Swift
 
-[*Swift*](https://es.wikipedia.org/wiki/Swift_(lenguaje_de_programación)) es un nuevo lenguaje de programación para aplicaciones de iOS, OS X, watchOS, y tvOS que estan cimentados en lo mejor de [*C*](https://es.wikipedia.org/wiki/C_(lenguaje_de_programación)) y [*Objective-C*](https://es.wikipedia.org/wiki/Objective-C), sin las restricciones de compatibilidad con C. Swift adopta patrones de programación seguros y añade características modernas para hacer el proceso más fácil, más flexible y más divertido. La implementación nueva y limpia de Swift, apoyado por los marcos operativos de [*Cocoa*](https://es.wikipedia.org/wiki/Cocoa_(informática)) y [*Cocoa Touch*](https://es.wikipedia.org/wiki/Cocoa_Touch) dan una oportunidad para reimaginar como funciona el desarollo de un Software.
+[*Swift*](https://es.wikipedia.org/wiki/Swift_(lenguaje_de_programación)) es un nuevo lenguaje de programación para aplicaciones de iOS, OS X, watchOS, y tvOS que está cimentado en lo mejor de [*C*](https://es.wikipedia.org/wiki/C_(lenguaje_de_programación)) y [*Objective-C*](https://es.wikipedia.org/wiki/Objective-C), sin las restricciones de compatibilidad con C. Swift adopta patrones de programación seguros y añade características modernas para hacer el proceso más fácil, más flexible y más divertido. La implementación nueva y limpia de Swift, apoyado por los marcos operativos de [*Cocoa*](https://es.wikipedia.org/wiki/Cocoa_(informática)) y [*Cocoa Touch*](https://es.wikipedia.org/wiki/Cocoa_Touch) dan una oportunidad para reimaginar como funciona el desarollo de un Software.
 
-El proceso de la creación de Swift se ha dado por varios años. Apple creó el cimiento para este, mejorando nuestra infraestructura de compilador, debuggeador y marco operativo. Hemos simplificado el manejo de la  memoria gracias a la creación de  [Contabilidad de Referencia Automatica](https://es.wikipedia.org/wiki/Contabilidad_de_Referencia_Automatica) (*Automatic Memory Management*, *ARC*). Nuestras estructuras, construidas sobre la base sólida de [*Foundation* y Cocoa](https://es.wikipedia.org/wiki/Cocoa_(informática)), han sido modernizadas y estandarizadas. Objective-C,  por sí mismo,  ha evolucionado para soportar [bloques](https://es.wikipedia.org/wiki/Clausura_(informática)),  colecciones literales y módulos, habilitando a que las infraestructuras adopten tecnologías de lenguas modernas sin obstáculos. Gracias a este trabajo, podemos introducir un nuevo lengauaje de desarollo para el futuro del Software de las plataformas de Apple.
+El proceso de la creación de Swift se ha dado por varios años. Apple creó el cimiento para este, mejorando nuestra infraestructura de compilador, debuggeador y marco operativo. Hemos simplificado el manejo de la  memoria gracias a la creación de  [Contabilidad de Referencia Automatica](https://es.wikipedia.org/wiki/Contabilidad_de_Referencia_Automatica) (*Automatic Memory Management*, *ARC*). Nuestras estructuras, construidas sobre la base sólida de [*Foundation* y Cocoa](https://es.wikipedia.org/wiki/Cocoa_(informática)), han sido modernizadas y estandarizadas. Objective-C,  por sí mismo,  ha evolucionado para soportar [bloques](https://es.wikipedia.org/wiki/Clausura_(informática)),  colecciones literales y módulos, habilitando a que las infraestructuras adopten tecnologías de lenguas modernas sin obstáculos. Gracias a este trabajo, podemos introducir un nuevo lenguaje de desarollo para el futuro del Software de las plataformas de Apple.
 
 Swift se siente familiar para desarolladores de Objective-C. Adopta la legibilidad de parámetros nombrados por Objective- C, así como el objetivo dinámico  del modelo. Provée acceso sin interrupciones a estructuras existentes de Cocoa y completa interoperabilidad entre códigos de Objective-C. Construyendo a partir de esta fundación, Swift introduce muchos nuevos conceptos y unifica los procesos y objetivos a los que está orientado el lenguaje.
 
-Swift es amigable para nuevos programadores. Es el primer lenguaje de programación de sistemas que cuenta con calidad industrial y  que, a su vez, es tan expresivo y agradable como un lenguaje de *scripting*. Soporta  *playgrounds*, una característica innovadora que da paso a la experimentación con el código Swift y  permite ver los resultados immediatamente, sin tener que compilar y activar la aplicación.
+Swift es amigable para nuevos programadores. Es el primer lenguaje de programación de sistemas que cuenta con calidad industrial y  que, a su vez, es tan expresivo y agradable como un lenguaje de *scripting*. Soporta  *playgrounds*, una característica innovadora que da paso a la experimentación con el código Swift y  permite ver los resultados inmediatamente, sin tener que compilar y activar la aplicación.
 
 Swift combina la mejor filosofía de los lenguajes modernos con la sabiduría de la amplia cultura en ingenería de Apple. El compilador está optimizado para el mejor rendimiento, y el lenguaje para un óptimo desarrollo, sin comprometer ninguno de los dos. Está diseñado para escalar de la implementacion de un "```hola mundo```" hasta un sistema operativo entero. Todo esto hace que Swift sea una inversión segura para desarrolladores y Apple.
 
-Swift es una manera fantástica para escribir aplicaciones iOS, OS X, watchOS, y tvOS, y continuará evolucionándose con nuevas características y nuevas capacidades. Nuestras metas para Swift son ambiciosas. No podemos esperar para ver qué podrás crear con ello.
+Así mismo,  es una manera fantástica para escribir aplicaciones iOS, OS X, watchOS, y tvOS, y continuará evolucionándose con nuevas características y nuevas capacidades. Nuestras metas para Swift son ambiciosas. No podemos esperar para ver qué podrás crear con ello.
 
 ## Una Guía de Swift
 
-La tradición sugiere que el primer programa en un nuevo lenguaje de desarollo debería plasmar las palabras "Hola, mundo!" en la pantalla. En Swift, esto se puede hacer con una sola linea de código:
+La tradición sugiere que el primer programa en un nuevo lenguaje de desarollo debería plasmar las palabras "Hola, mundo!" en la pantalla. En Swift, esto se puede hacer con una sola línea de código:
 
 ```
 print("Hola, mundo!")
@@ -28,16 +28,16 @@ Esta guia te da suficiente información para empezar a escribir códigos en Swif
 
 ### Valores Simples
 
-Se usa ```let``` para crear una constante y ```var``` para crear una variable. El valor de una constante no necesita saberse a la hora de compilar, pero hay que asignarle un valor exacto de una vez. Esto significa que puedes usar constantes para nombrar un valor que se determina una vez, pero te permitiría  usarlo en muchos lugares.
+Se usa ```let``` para crear una constante y ```var``` para crear una variable. El valor de una constante no necesita saberse a la hora de compilar, pero hay que asignarle un valor exacto, preferiblemente, en ese momento. Esto significa que puedes usar constantes para nombrar un valor que se determina una vez, pero te permitiría  usarlo en muchos lugares.
 
 ```
 var miVariable = 42
 miVariable = 50
 let miConstante = 42
 ```
-Una constante o variable debería  tener el mismo tipo de valor que le quieras asignar. Sin embargo, no necesitas escribirlo explicitamente todo el tiempo. Proveer un valor cuando creas la constante o variable, permite que el compilador deduzca su tipo. En el ejemplo de arriba, el compilador deduce que ```myVariable``` es un número entero (*Integer*) por que su valor inicial es un número entero.
+Una constante o variable debería  tener el mismo tipo de valor que le quieras asignar. Sin embargo, no necesitas escribirlo explícitamente todo el tiempo. Proveer un valor cuando creas la constante o variable, permite que el compilador deduzca su tipo. En el ejemplo de arriba, el compilador deduce que ```myVariable``` es un número entero (*Integer*) por que su valor inicial también lo es.
 
-Si el valor inicial no provée suficiente información (o si no hay un valor inicial), especifica el tipo escribiéndolo después de la variable, separado por dos puntos.
+Si el valor inicial no provée suficiente información (o si no hay un valor inicial), especifica el tipo escribiéndolo después de la variable, separado por dos puntos como se ve a continuación.
 
 ```
 let enteroImplicito = 70
@@ -46,9 +46,9 @@ let dobleExplicita: Double = 70
 ```
 
 #### Experimento
-Crea una constante con un tipo explicito de ```Float``` y un valor de ```4```.
+Crea una constante con un tipo explícito de ```Float``` y un valor de ```4```.
 
-Valores nunca son implicitamente convertidos a otro tipo. Si necesitas covnertir un valor a otro tipo, explicitamente has una instancia, del tipo deseado.
+Los valores nunca son implícitamente convertidos a otro tipo. Si necesitas convertir un valor a otro tipo, explícitamente haz una instancia del tipo deseado.
 
 ```
 let etiqueta: "El ancho es "
@@ -57,35 +57,35 @@ let etiquetaAncho = etiqueta + String(ancho)
 ```
 
 #### Experimento
-Intenta remover la conversion a ```String``` de la ultima linea. Que error te da?
+Intenta remover la conversión a ```String``` de la última línea. ¿Qué error te aparece?
 
-Hay una manera mas simple de incluir varios valores en texto: Escribe el valor en parentesis, y escripe una barra invertida (```\```) antes de los parentesis. Por ejemplo:
+Hay una manera más simple de incluir varios valores en el  texto: Escribe el valor entre paréntesis, y escribe una barra invertida (```\```) antes de estos. Por ejemplo:
 
 ```
 let manzanas = 3
-let narajas = 5
-let manazanaResumen = "Yo tengo \(manzanas) mazanas."
-let frutaResumen = "Yo tengo \(manzanas + narajas) pedazos de fruta."
+let naranjas = 5
+let manzanaResumen = "Yo tengo \(manzanas) manzanas."
+let frutaResumen = "Yo tengo \(manzanas + naranjas) pedazos de fruta."
 ```
 
 #### Experimento
-Usa ```\()``` para incluir un calculo de punto flotante en un texto y para incluir el nombre de alguien en un saludo.
+Usa ```\()``` para incluir un cálculo de punto flotante en un texto y para incluir el nombre de alguien en un saludo.
 
-Crea [arreglos](https://es.wikipedia.org/wiki/Vector_(informática)) (*array*) y [diccionarios](https://es.wikipedia.org/wiki/Vector_asociativo) (*dictionaries*) usando brackets (```[]```) y accede sus elementos escribiendo el indice (*index*) o llave (*key*) en brackets. Una comma se permite despues del primer elemento.
+Crea [arreglos](https://es.wikipedia.org/wiki/Vector_(informática)) (*array*) y [diccionarios](https://es.wikipedia.org/wiki/Vector_asociativo) (*dictionaries*) usando corchetes (```[]```) y accede sus elementos escribiendo el índice (*index*) o llave (*key*) en corchetes. Una coma se permite después del primer elemento.
 
 ```
 var miListaDeCompras = ["bagre", "agua", "tulipanes", "pintura azul"]
 miListaDeCompras[1] = "botella de agua"
 
 var profesiones = [
-	"Malcolm": "Capitan",
-	"Kaylee": "Mecanico"
+	"Malcolm": "Capitán",
+	"Kaylee": "Mecánico"
 ]
 
-profesiones["Jayne"] = "Relaciones Publicas"
+profesiones["Jayne"] = "Relaciones Públicas"
 ```
 
-Si la informacion de tipo puede ser deducida, puedes escribir un arreglo vacio como ```[]``` y un diccionario vacio como ```[:]```: Por ejemplo, cuando creas un nuevo valor para una variable, o pasas un arguemento a una funcion.
+Si la información de tipo puede ser deducida, puedes escribir un arreglo vacío como ```[]``` y un diccionario vacío como ```[:]```: Esto podría ocurrir, por ejemplo, cuando creas un nuevo valor para una variable o pasas un de argumento a una función.
 
 ```
 lista de compras = []
@@ -93,7 +93,7 @@ profesiones = [:]
 ```
 
 ### [Control de Flujo](https://es.wikipedia.org/wiki/Estructuras_de_control)
-Usa ```if``` y ```switch``` para crear [sentencias condicionales](https://es.wikipedia.org/wiki/Sentencia_condicional), y usa ```for```-```in```, ```for```, ```while```, y ```repeat``` para hacer un [ciclo](https://es.wikipedia.org/wiki/Bucle_(programación)) (*loop*). Parentesis cerrando la condicion o ciclo son opcionales. Llaves sobre el cuerpo son requeridos.
+Usa ```if``` y ```switch``` para crear [sentencias condicionales](https://es.wikipedia.org/wiki/Sentencia_condicional), y usa ```for```-```in```, ```for```, ```while```, y ```repeat``` para hacer un [ciclo](https://es.wikipedia.org/wiki/Bucle_(programación)) (*loop*). Los paréntesisal cerrar la condición o ciclo son opcionales pero  las llaves sobre el cuerpo son requeridos.
 
 ```
 let puntajesIndividuales = [75, 43, 103, 87, 12]
@@ -111,7 +111,7 @@ for puntaje in puntajesIndividuales {
 print(puntajeDeEquipo)
 ```
 
-En una sentencia de ```if```, el condicional deberia ser una expresion [Booleana ](https://es.wikipedia.org/wiki/Tipo_de_dato_lógico) (*Boolean*, *Bool*), lo cual significa que codigo como ```if score { ... }``` es un error, no una comparacion implicita a cero. Puedes usar ```if``` y ```let``` juntos para trabajar con valores que podrian estar faltantes. Estos valores se representa como opcionales (*optionals*). Un valor opcional contiene un valor o ```nil``` (nulo) para representar que un valor esta faltando. Escribe un signo de interrogacion (```?```) despues del tipo de valor para marcar el valor como opcional.
+En una sentencia de ```if```, el condicional debería ser una expresión [Booleana ](https://es.wikipedia.org/wiki/Tipo_de_dato_lógico) (*Boolean*, *Bool*), lo cual significa que un código como ```if score { ... }``` es un error mas no una comparación implícita a cero. Puedes usar ```if``` y ```let``` juntos para trabajar con valores que podrían estar ausentes. Estos valores se representan como opcionales (*optionals*). Un valor opcional contiene un valor  ```nil``` (nulo) para representar que un valor esta faltando. Escribe un signo de interrogacion (```?```) después del tipo de valor para marcarlo como opcional.
 
 ```
 var textoOpcional: String? = "Hello"
@@ -125,11 +125,11 @@ if let nombre = nombreOpcional {
 ```
 
 #### Experimento
-Cambia ```textoOpcional``` a ```nil```. Que saludo obtienes? Añade una clausula de ```else``` que setea otro saludo si ```nombreOpcional``` es ```nil```.
+Cambia ```textoOpcional``` a ```nil```. ¿Qué saludo se obtiene? Añade una cláusula de ```else``` que setea otro saludo si ```nombreOpcional``` es ```nil```.
 
-Si el valor opcional es ```nil```, el valor condicional es falso y el codigo en las llaves se saltea. De lo contrario, el valor opcional es desenvuelto y asignado al constante despues de ```let```, lo cual hace el valor desenvuelto disponible dentro del bloque de codigo.
+Si el valor opcional es ```nil```, el valor condicional es falso y el código en las llaves se saltea. De lo contrario, el valor opcional es desenvuelto y asignado al constante después de ```let```, lo cual hace al valor desenvuelto disponible dentro del bloque de código.
 
-Otra manera de manejar valores opcionales es proveer un valor predeterminado usando el operador ```??```. Si el valor opcional esta faltando, el valor predeterminado es usado en su lugar.
+Otra manera de manejar valores opcionales es proveer un valor predeterminado usando el operador ```??```. Si el valor opcional está faltando, el valor predeterminado es usado en su lugar.
 
 ```
 let apodo: String? = nil
@@ -140,7 +140,7 @@ let saludoInformal = "Hola \(apodo ?? nombreCompleto)"
 [Interruptores](https://es.wikipedia.org/wiki/Switch_case) (*switch*) soportan cualquier tipo de datos y una amplia variedad de operaciones de comparacion: no estan limitados a numeros enteros y preubas de igualdad.
 
 ```
-let vegetal = "aji rojo"
+let vegetal = "ají rojo"
 switch vegetal {
 case "apio":
 	print("Añade unas pasas y prepara un bocado")
@@ -154,9 +154,9 @@ default:
 ```
 
 #### Experimento
-Intenta remover el caso predeterminado (```default:```). Que error recibes?
+Intenta remover el caso predeterminado (```default:```). ¿Qué error recibes?
 
-Nota como ```let``` puede ser usado en un patron para asignar el valor que parejo esa parte del patron a un constante.
+Nota como ```let``` puede ser usado en un patrón para asignar el valor que parejo esa parte del patron a un constante.
 
 Despues de ejecutar el codigo dentro del caso que emparejo, el programa sale (*exits*) del sentencia de interrupcion. Ejecuccion no continua al siguiente caso, entonces no hay necesidad del explicitamente cesar (*break*) el interruptor que esta al final del codigo de cada caso.
 
