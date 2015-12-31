@@ -49,10 +49,7 @@ Programa informático capaz de analizar y ejecutar otros programas. Los intérpr
 - Ingles: Interpreter, Script
 
 # Marco de Trabajo
-Una estructura conceptual y tecnológica de soporte definido, normalmente con artefactos o módulos concretos de software, que puede servir de base para la organización y desarrollo de software.
-
-- [Wikipedia](https://es.wikipedia.org/wiki/Framework)
-- Ingles: Framework, Library
+(*Framework* en Inglés) Una estructura conceptual y tecnológica de soporte definido, normalmente con artefactos o módulos concretos de software, que puede servir de base para la organización y desarrollo de software. [Wikipedia](https://es.wikipedia.org/wiki/Framework)
 
 # Objective-C
 Objective-C es un lenguaje de programación orientado a objetos creado como un superconjunto de C para que implementase un modelo de objetos parecido al de Smalltalk.
