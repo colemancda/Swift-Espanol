@@ -19,6 +19,8 @@ El marco de trabajo para desarollo de aplicaciones para la plataforma iOS (el si
 # Foundation
 El marco de trabajo prinicipal para desarollo de aplicaciones para todas las platformas de Apple.
 
+## Lenguaje Interpretado
+(Scripting language) Lenguaje que usa un intérprete envez de un compilador. Los intérpretes se diferencian de los compiladores o de los ensambladores en que mientras estos traducen un programa desde su descripción en un lenguaje de programación al código de máquina del sistema, los intérpretes sólo realizan la traducción a medida que sea necesaria, típicamente, instrucción por instrucción, y normalmente no guardan el resultado de dicha traducción.
 
 # Marco de Trabajo
 (Framework) Una estructura conceptual y tecnológica de soporte definido, normalmente con artefactos o módulos concretos de software, que puede servir de base para la organización y desarrollo de software. [Wikipedia](https://es.wikipedia.org/wiki/Framework)
@@ -29,10 +31,10 @@ Objective-C es un lenguaje de programación orientado a objetos creado como un s
 # Orientado a Objetos
 La programación orientada a objetos (POO) es un paradigma de programación que usa objetos en sus interacciones, para diseñar aplicaciones y programas informáticos.
 
-# Playground
+# Playgrounds
 Ambiente de Swift que permite usar el lenguaje como si fuera interpretado y no compilado. Permite programmadores experimentar con codigo Swift y ver los resultados immediatamente, sin el gasto de compilar y correr la applicacion.
 
-# Procedural
+# Procedurales
 La programación por procedimientos es un paradigma de la programación. Esta técnica consiste en basarse de un número muy bajo de expresiones repetidas, englobarlas todas en un procedimiento o función y llamarlo cada vez que tenga que ejecutarse.
 
 # Software
