@@ -4,11 +4,6 @@ Apple Inc. es una empresa multinacional estadounidense que diseña y produce equ
 - [Wikipedia](https://es.wikipedia.org/wiki/Apple)
 - [Pagina Web](www.appple.com)
 
-# C
-Lenguaje de programación originalmente desarrollado por Dennis M. Ritchie entre 1969 y 1972 en los Laboratorios Bell.
-
-- [Wikipedia](https://es.wikipedia.org/wiki/C_(lenguaje_de_programación))
-
 # Clausura
 Una función evaluada en un entorno que contiene una o más variables dependientes de otro entorno.
 
