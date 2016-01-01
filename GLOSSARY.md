@@ -43,7 +43,7 @@ El marco de trabajo prinicipal para desarollo de aplicaciones para todas las pla
 # Función
 (Function) Se le llama funcion (también llamada subrutina, subprograma, procedimiento, rutina o metodo) a un segmento de código separado del bloque principal y que puede ser invocado en cualquier momento desde este o desde otra subrutina.
 
-# Indice
+# índice
 (Index) El numero asociado con un elemento en un arreglo.
 
 ## Lenguaje Interpretado
