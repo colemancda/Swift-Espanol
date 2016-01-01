@@ -40,7 +40,7 @@ Una instrucción o grupo de instrucciones que se pueden ejecutar o no en funció
 # Foundation
 El marco de trabajo prinicipal para desarollo de aplicaciones para todas las platformas de Apple.
 
-# Índice
+# Indice
 (Index) El numero asociado con un elemento en un arreglo.
 
 ## Lenguaje Interpretado
@@ -57,6 +57,9 @@ El marco de trabajo prinicipal para desarollo de aplicaciones para todas las pla
 
 # Objective-C
 Objective-C es un lenguaje de programación orientado a objetos creado como un superconjunto de C para que implementase un modelo de objetos parecido al de Smalltalk.
+
+# Opcional
+(Optional) Un tipo opcional es un tipo polimórfico que representa la encapsulación de un valor opcional; por ejemplo, se utiliza como el tipo de retorno de las funciones que puedan o no devolver un valor significativo cuando se aplican. Se compone de ya sea un constructor vacío (llamado "Ninguno" o "Nada"), o un constructor que encapsula el tipo de datos original A (escrito "Justo A" o "Algún A"). Fuera de la programación funcional, estos son conocidos como tipos anulables.
 
 # Orientado a Objetos
 La programación orientada a objetos (POO) es un paradigma de programación que usa objetos en sus interacciones, para diseñar aplicaciones y programas informáticos.
