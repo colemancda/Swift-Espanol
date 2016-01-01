@@ -1,6 +1,15 @@
 # Apple
 Apple Inc. es una empresa multinacional estadounidense que diseña y produce equipos electrónicos y software, con sede en Cupertino (California, Estados Unidos). Entre los productos de hardware más conocidos de la empresa se cuenta con equipos Macintosh, el iPod, el iPhone y el iPad.
 
+# Arreglo
+(Array) En programación tambien se denomina matriz, vector o formación a una zona de almacenamiento continuo que contiene una serie de elementos del mismo tipo, los elementos de la matriz. Desde el punto de vista lógico una matriz se puede ver como un conjunto de elementos ordenados en fila (o filas y columnas si tuviera dos dimensiones).
+
+# Booleana
+(Boolean, Bool) El tipo de dato lógico o booleano es en computación aquel que puede representar valores de lógica binaria, esto es 2 valores, valores que normalmente representan falso o verdadero.
+
+# Ciclo
+(Loop) Un bucle o ciclo, en programación, es una sentencia que se realiza repetidas veces a un trozo aislado de código, hasta que la condición asignada a dicho bucle deje de cumplirse.
+
 # Clausura
 (Clousure, Block) Una función evaluada en un entorno que contiene una o más variables dependientes de otro entorno.
 
@@ -9,6 +18,9 @@ El marco de trabajo para desarollo de aplicaciones para la plataforma OS X (ante
 
 # Cocoa Touch
 El marco de trabajo para desarollo de aplicaciones para la plataforma iOS (el sistema operativo de iPhone, iPod y iPad).
+
+# Condicional
+Una instrucción o grupo de instrucciones que se pueden ejecutar o no en función del valor de una condición.
 
 # Contexto
 (Scope) Es el mínimo conjunto de datos utilizado por una tarea que debe ser guardado para permitir su interrupción en un momento dado, y una posterior continuación desde el punto en el que fue interrumpida en un momento futuro.
@@ -19,14 +31,23 @@ El marco de trabajo para desarollo de aplicaciones para la plataforma iOS (el si
 # Depurador
 (Debugger) Un depurador, es un programa usado para probar y depurar (eliminar) los errores de otros programas.
 
+# Diccionario
+(Dictionary) Un diccionario (también contenedor asociativo, mapa, mapeador, hash, vector asociativo, mapa finito, tabla de consulta) es un tipo abstracto de dato formado por una colección de claves únicas y una colección de valores, con una asociación uno a uno.
+
 # Entrada y Salida
 (Input/Output, I/O) Un dispositivo que permite la comunicación entre un sistema de procesamiento de información, tal como la computadora y el mundo exterior, y posiblemente un humano u otro sistema de procesamiento de información.
 
 # Foundation
 El marco de trabajo prinicipal para desarollo de aplicaciones para todas las platformas de Apple.
 
+# Índice
+(Index) El numero asociado con un elemento en un arreglo.
+
 ## Lenguaje Interpretado
 (Scripting language) Lenguaje que usa un intérprete envez de un compilador. Los intérpretes se diferencian de los compiladores o de los ensambladores en que mientras estos traducen un programa desde su descripción en un lenguaje de programación al código de máquina del sistema, los intérpretes sólo realizan la traducción a medida que sea necesaria, típicamente, instrucción por instrucción, y normalmente no guardan el resultado de dicha traducción.
+
+# Llave
+(Key) El texto associado con que se associa un valor en un diccionario.
 
 # Marco de Trabajo
 (Framework) Una estructura conceptual y tecnológica de soporte definido, normalmente con artefactos o módulos concretos de software, que puede servir de base para la organización y desarrollo de software.
