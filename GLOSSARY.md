@@ -81,3 +81,6 @@ Lenguaje de programación multiparadigma creado por Apple enfocado en el desarro
 
 # Texto
 Conocida como "String" en inglés y la mayoria de lenguajes de programación.
+
+# Tupla
+(Tuple) Conjunto de elementos de distinto tipo que se guardan de forma consecutiva en memoria.
