@@ -10,11 +10,17 @@ El marco de trabajo para desarollo de aplicaciones para la plataforma OS X (ante
 # Cocoa Touch
 El marco de trabajo para desarollo de aplicaciones para la plataforma iOS (el sistema operativo de iPhone, iPod y iPad).
 
+# Contexto
+(Scope) Es el mínimo conjunto de datos utilizado por una tarea que debe ser guardado para permitir su interrupción en un momento dado, y una posterior continuación desde el punto en el que fue interrumpida en un momento futuro.
+
 # Conteo de Referencia Automatica
 (Automatic Reference Counting, ARC) En Objective-C y programación Swift, Conteo de Referencia Automatica es una mejora de manejo de memoria donde la carga de mantener el conteo de referencia de un objeto es transferido del programador al compilador.
 
 # Depurador
 (Debugger) Un depurador, es un programa usado para probar y depurar (eliminar) los errores de otros programas.
+
+# Entrada y Salida
+(Input/Output, I/O) Un dispositivo que permite la comunicación entre un sistema de procesamiento de información, tal como la computadora y el mundo exterior, y posiblemente un humano u otro sistema de procesamiento de información.
 
 # Foundation
 El marco de trabajo prinicipal para desarollo de aplicaciones para todas las platformas de Apple.
@@ -23,7 +29,10 @@ El marco de trabajo prinicipal para desarollo de aplicaciones para todas las pla
 (Scripting language) Lenguaje que usa un intérprete envez de un compilador. Los intérpretes se diferencian de los compiladores o de los ensambladores en que mientras estos traducen un programa desde su descripción en un lenguaje de programación al código de máquina del sistema, los intérpretes sólo realizan la traducción a medida que sea necesaria, típicamente, instrucción por instrucción, y normalmente no guardan el resultado de dicha traducción.
 
 # Marco de Trabajo
-(Framework) Una estructura conceptual y tecnológica de soporte definido, normalmente con artefactos o módulos concretos de software, que puede servir de base para la organización y desarrollo de software. [Wikipedia](https://es.wikipedia.org/wiki/Framework)
+(Framework) Una estructura conceptual y tecnológica de soporte definido, normalmente con artefactos o módulos concretos de software, que puede servir de base para la organización y desarrollo de software.
+
+# Número Entero
+(Integer) Un tipo de dato entero en computación es un tipo de dato que puede representar un subconjunto finito de los números enteros.
 
 # Objective-C
 Objective-C es un lenguaje de programación orientado a objetos creado como un superconjunto de C para que implementase un modelo de objetos parecido al de Smalltalk.
@@ -42,3 +51,6 @@ Equipo lógico o soporte lógico de un sistema informático, que comprende el co
 
 # Swift
 Lenguaje de programación multiparadigma creado por Apple enfocado en el desarrollo de aplicaciones para sus plataformas.
+
+# Texto
+Conocida como "String" en inglés y la mayoria de lenguajes de programación.
