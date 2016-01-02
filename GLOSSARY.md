@@ -61,6 +61,9 @@ El marco de trabajo principal para desarrollo de aplicaciones para todas las pla
 # Marco de Trabajo
 (Framework) Una estructura conceptual y tecnológica de soporte definido, normalmente con artefactos o módulos concretos de software, que puede servir de base para la organización y desarrollo de software.
 
+# Método
+(Method) Una función cuyo código es definido en una clase y puede pertenecer tanto a una clase, como es el caso de los métodos de clase o estáticos, como a un objeto, como es el caso de los métodos de instancia. La diferencia entre una función y un método es que éste último, al estar asociado con un objeto o clase en particular, puede acceder y modificar los datos privados del objeto correspondiente de forma tal que sea consistente con el comportamiento deseado para el mismo.
+
 # Modificador
 (Setter) Método que cambia el valor de una propiedad de un objeto.
 
