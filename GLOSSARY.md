@@ -25,6 +25,9 @@ El marco de trabajo para desarrollo de aplicaciones para la plataforma iOS (el s
 # Condicional
 Una instrucción o grupo de instrucciones que se pueden ejecutar o no en función del valor de una condición.
 
+# Consultor
+(Getter) Método que retorna el valor de una propiedad de un objeto.
+
 # Contexto
 (Scope) Es el mínimo conjunto de datos utilizado por una tarea que debe ser guardado para permitir su interrupción en un momento dado, y una posterior continuación desde el punto en el que fue interrumpida en un momento futuro.
 
@@ -57,6 +60,9 @@ El marco de trabajo principal para desarrollo de aplicaciones para todas las pla
 
 # Marco de Trabajo
 (Framework) Una estructura conceptual y tecnológica de soporte definido, normalmente con artefactos o módulos concretos de software, que puede servir de base para la organización y desarrollo de software.
+
+# Modificador
+(Setter) Método que cambia el valor de una propiedad de un objeto.
 
 # Número Entero
 (Integer) Un tipo de dato entero en computación es un tipo de dato que puede representar un subconjunto finito de los números enteros.
